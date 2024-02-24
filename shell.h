@@ -152,4 +152,29 @@ void ffree(char **);
 void *_realloc(void *, unsigned int, unsigned int);
 
 /* memory_functions2.c */
+int bfree(void **);
 
+/* more_functions.c */
+int interactive(info_t *);
+int is_delim(char, char *);
+int _isalpha(int);
+int _atoi(char *);
+
+/* more_functions2.c */
+int _erratoi(char *);
+void print_error(info_t *, char *);
+int print_d(int, int);
+char *convert_number(long int, int int);
+void remove_comments(char *);
+
+/* builtin_emulators.c */
+int _myexit(info_t *);
+int _mycd(info_t *);
+int _myhelp(info_t *);
+
+/* builtin_emulators2.c */
+int _myhistory(info_t *);
+int _myalias(info_t *);
+
+/* getline.c module */
+ssize_t get_input(info_t *);
