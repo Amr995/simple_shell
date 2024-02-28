@@ -19,9 +19,9 @@ int _strlen(char *s)
 }
 
 /**
- * _strcmp - performs lexicogarphic comparison of two strings.
+ * _strcmp - performs lexicogarphic comparison of two strangs.
  * @s1: the first strang
- * @s2: the secong strang
+ * @s2: the second strang
  *
  * Return: negative if s1 < s2, positive if s1 > s2, zero if s1 == s2
  */
@@ -67,7 +67,7 @@ char *_strcat(char *dest, char *src)
 	char *ret = dest;
 
 	while (*dest)
-		dest;
+		dest++;
 	while (*src)
 		*dest++ = *src++;
 	*dest = *src;
